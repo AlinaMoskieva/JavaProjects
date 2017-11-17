@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kpfu.tools.cct.view.TasksSimpleController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleGetTask" text="Получить задачу с id 0" />
+      <Button layoutX="14.0" layoutY="49.0" mnemonicParsing="false" text="Получить задачу с id 1" />
+      <Label fx:id="taskIdLabel" layoutX="214.0" layoutY="18.0" text="Id задачи" />
+      <Label fx:id="taskAuthorIdLabel" layoutX="214.0" layoutY="41.0" text="id автора задачи" />
+      <Label fx:id="taskInstructionsFileUrlLabel" layoutX="214.0" layoutY="66.0" text="URL файла с инструкциями" />
+   </children>
+</AnchorPane>

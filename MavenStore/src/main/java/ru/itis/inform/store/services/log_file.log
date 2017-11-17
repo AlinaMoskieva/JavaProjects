@@ -1,0 +1,435 @@
+2016-03-02 19:40:36 INFO  StoreServiceImpl:20 - purchase!
+2016-03-02 19:51:11 INFO  StoreServiceImpl:25 - Test item was select
+2016-03-02 19:53:56 INFO  StoreServiceImpl:25 - Test item was select
+2016-03-02 19:57:43 INFO  StoreServiceImpl:25 - Tovar was select
+2016-03-02 19:57:48 INFO  StoreServiceImpl:25 - Tovar was select
+2016-03-02 19:58:08 INFO  StoreServiceImpl:25 - Tovar was select
+2016-03-02 20:03:42 INFO  StoreServiceImpl:25 - Tovar was select
+2016-03-02 20:08:11 INFO  StoreServiceImpl:20 - purchase!
+2016-03-02 23:44:07 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Wed Mar 02 23:44:07 MSK 2016]; root of context hierarchy
+2016-03-02 23:44:07 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-02 23:48:39 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Wed Mar 02 23:48:39 MSK 2016]; root of context hierarchy
+2016-03-02 23:48:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-02 23:50:09 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Wed Mar 02 23:50:09 MSK 2016]; root of context hierarchy
+2016-03-02 23:50:09 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-02 23:51:51 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Wed Mar 02 23:51:51 MSK 2016]; root of context hierarchy
+2016-03-02 23:51:51 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 00:00:18 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Thu Mar 03 00:00:18 MSK 2016]; root of context hierarchy
+2016-03-03 00:00:18 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 10:56:49 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Thu Mar 03 10:56:49 MSK 2016]; root of context hierarchy
+2016-03-03 10:56:49 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config.xml]
+2016-03-03 10:59:52 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@379619aa: startup date [Thu Mar 03 10:59:52 MSK 2016]; root of context hierarchy
+2016-03-03 10:59:52 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [config.xml]
+2016-03-03 11:00:36 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Thu Mar 03 11:00:36 MSK 2016]; root of context hierarchy
+2016-03-03 11:00:36 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 11:00:36 WARN  ClassPathXmlApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'service' defined in class path resource [app-context.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [ru.itis.inform.store.dao.ItemsDao]: Could not convert constructor argument value of type [ru.itis.inform.store.dao.ItemsDaoCsvImpl] to required type [ru.itis.inform.store.dao.ItemsDao]: Failed to convert value of type 'ru.itis.inform.store.dao.ItemsDaoCsvImpl' to required type 'ru.itis.inform.store.dao.ItemsDao'; nested exception is java.lang.IllegalStateException: Cannot convert value of type [ru.itis.inform.store.dao.ItemsDaoCsvImpl] to required type [ru.itis.inform.store.dao.ItemsDao]: no matching editors or conversion strategy found
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at ru.itis.inform.store.services.Program.main(Program.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+2016-03-03 11:04:03 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@626b2d4a: startup date [Thu Mar 03 11:04:03 MSK 2016]; root of context hierarchy
+2016-03-03 11:04:04 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 11:04:04 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-03 11:15:12 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Thu Mar 03 11:15:12 MSK 2016]; root of context hierarchy
+2016-03-03 11:15:12 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 11:15:12 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-03 11:16:26 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Thu Mar 03 11:16:26 MSK 2016]; root of context hierarchy
+2016-03-03 11:16:26 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 11:16:27 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-03 11:19:14 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Thu Mar 03 11:19:14 MSK 2016]; root of context hierarchy
+2016-03-03 11:19:14 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 11:19:14 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-03 11:20:23 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Thu Mar 03 11:20:23 MSK 2016]; root of context hierarchy
+2016-03-03 11:20:23 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 11:20:23 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-03 11:20:41 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Thu Mar 03 11:20:41 MSK 2016]; root of context hierarchy
+2016-03-03 11:20:41 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 11:20:41 INFO  StoreServiceImpl:25 - item1 was select
+2016-03-03 11:20:47 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Thu Mar 03 11:20:47 MSK 2016]; root of context hierarchy
+2016-03-03 11:20:48 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 11:20:48 INFO  StoreServiceImpl:25 - item was select
+2016-03-03 11:21:11 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c4af82c: startup date [Thu Mar 03 11:21:11 MSK 2016]; root of context hierarchy
+2016-03-03 11:21:11 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [app-context.xml]
+2016-03-03 11:21:12 INFO  StoreServiceImpl:25 - item was select
+2016-03-03 11:21:12 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-03 11:21:12 INFO  StoreServiceImpl:25 - item1 was select
+2016-03-03 12:59:18 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-03 13:01:11 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 20:59:52 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:01:46 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:02:28 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:03:16 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:04:17 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:05:15 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:06:03 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:06:59 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:07:25 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:08:30 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:09:14 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:10:35 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:13:01 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 21:33:18 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 22:14:18 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Wed Mar 09 22:14:18 MSK 2016]; root of context hierarchy
+2016-03-09 22:14:18 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 22:15:28 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Wed Mar 09 22:15:28 MSK 2016]; root of context hierarchy
+2016-03-09 22:15:28 INFO  DefaultListableBeanFactory:822 - Overriding bean definition for bean 'output': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ru.itis.inform.store.dao.DaoConfig; factoryMethodName=output; initMethodName=null; destroyMethodName=(inferred); defined in class ru.itis.inform.store.dao.DaoConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servicesConfig; factoryMethodName=output; initMethodName=null; destroyMethodName=(inferred); defined in ru.itis.inform.store.services.ServicesConfig]
+2016-03-09 22:15:28 INFO  DefaultListableBeanFactory:822 - Overriding bean definition for bean 'input': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ru.itis.inform.store.dao.DaoConfig; factoryMethodName=input; initMethodName=null; destroyMethodName=(inferred); defined in class ru.itis.inform.store.dao.DaoConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servicesConfig; factoryMethodName=input; initMethodName=null; destroyMethodName=(inferred); defined in ru.itis.inform.store.services.ServicesConfig]
+2016-03-09 22:15:29 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 22:17:48 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Wed Mar 09 22:17:48 MSK 2016]; root of context hierarchy
+2016-03-09 22:17:48 INFO  DefaultListableBeanFactory:822 - Overriding bean definition for bean 'output': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ru.itis.inform.store.dao.DaoConfig; factoryMethodName=output; initMethodName=null; destroyMethodName=(inferred); defined in class ru.itis.inform.store.dao.DaoConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servicesConfig; factoryMethodName=output; initMethodName=null; destroyMethodName=(inferred); defined in ru.itis.inform.store.services.ServicesConfig]
+2016-03-09 22:17:48 INFO  DefaultListableBeanFactory:822 - Overriding bean definition for bean 'input': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ru.itis.inform.store.dao.DaoConfig; factoryMethodName=input; initMethodName=null; destroyMethodName=(inferred); defined in class ru.itis.inform.store.dao.DaoConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servicesConfig; factoryMethodName=input; initMethodName=null; destroyMethodName=(inferred); defined in ru.itis.inform.store.services.ServicesConfig]
+2016-03-09 22:17:48 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 22:19:00 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Wed Mar 09 22:19:00 MSK 2016]; root of context hierarchy
+2016-03-09 22:19:00 INFO  DefaultListableBeanFactory:822 - Overriding bean definition for bean 'output': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ru.itis.inform.store.dao.DaoConfig; factoryMethodName=output; initMethodName=null; destroyMethodName=(inferred); defined in class ru.itis.inform.store.dao.DaoConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servicesConfig; factoryMethodName=output; initMethodName=null; destroyMethodName=(inferred); defined in ru.itis.inform.store.services.ServicesConfig]
+2016-03-09 22:19:00 INFO  DefaultListableBeanFactory:822 - Overriding bean definition for bean 'input': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ru.itis.inform.store.dao.DaoConfig; factoryMethodName=input; initMethodName=null; destroyMethodName=(inferred); defined in class ru.itis.inform.store.dao.DaoConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servicesConfig; factoryMethodName=input; initMethodName=null; destroyMethodName=(inferred); defined in ru.itis.inform.store.services.ServicesConfig]
+2016-03-09 22:19:00 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 22:19:57 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Wed Mar 09 22:19:57 MSK 2016]; root of context hierarchy
+2016-03-09 22:19:57 INFO  DefaultListableBeanFactory:822 - Overriding bean definition for bean 'output': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ru.itis.inform.store.dao.DaoConfig; factoryMethodName=output; initMethodName=null; destroyMethodName=(inferred); defined in class ru.itis.inform.store.dao.DaoConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servicesConfig; factoryMethodName=output; initMethodName=null; destroyMethodName=(inferred); defined in ru.itis.inform.store.services.ServicesConfig]
+2016-03-09 22:19:57 INFO  DefaultListableBeanFactory:822 - Overriding bean definition for bean 'input': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ru.itis.inform.store.dao.DaoConfig; factoryMethodName=input; initMethodName=null; destroyMethodName=(inferred); defined in class ru.itis.inform.store.dao.DaoConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servicesConfig; factoryMethodName=input; initMethodName=null; destroyMethodName=(inferred); defined in ru.itis.inform.store.services.ServicesConfig]
+2016-03-09 22:19:57 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 22:20:07 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Wed Mar 09 22:20:07 MSK 2016]; root of context hierarchy
+2016-03-09 22:20:07 INFO  DefaultListableBeanFactory:822 - Overriding bean definition for bean 'output': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ru.itis.inform.store.dao.DaoConfig; factoryMethodName=output; initMethodName=null; destroyMethodName=(inferred); defined in class ru.itis.inform.store.dao.DaoConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servicesConfig; factoryMethodName=output; initMethodName=null; destroyMethodName=(inferred); defined in ru.itis.inform.store.services.ServicesConfig]
+2016-03-09 22:20:07 INFO  DefaultListableBeanFactory:822 - Overriding bean definition for bean 'input': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=ru.itis.inform.store.dao.DaoConfig; factoryMethodName=input; initMethodName=null; destroyMethodName=(inferred); defined in class ru.itis.inform.store.dao.DaoConfig] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servicesConfig; factoryMethodName=input; initMethodName=null; destroyMethodName=(inferred); defined in ru.itis.inform.store.services.ServicesConfig]
+2016-03-09 22:20:07 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-09 22:24:38 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Wed Mar 09 22:24:38 MSK 2016]; root of context hierarchy
+2016-03-09 22:24:39 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-10 10:45:18 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 10:45:18 MSK 2016]; root of context hierarchy
+2016-03-10 10:45:18 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:06:15 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:06:15 MSK 2016]; root of context hierarchy
+2016-03-10 11:06:16 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:06:28 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:06:28 MSK 2016]; root of context hierarchy
+2016-03-10 11:06:29 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:06:42 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:06:42 MSK 2016]; root of context hierarchy
+2016-03-10 11:06:43 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:21:16 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:21:16 MSK 2016]; root of context hierarchy
+2016-03-10 11:21:16 WARN  AnnotationConfigApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getOutput': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private ru.itis.inform.store.dao.ItemsDaoInput ru.itis.inform.store.dao.ItemsDaoFileBasedImpl.input; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: getTsv,getCsv
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at ru.itis.inform.store.services.Program.main(Program.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private ru.itis.inform.store.dao.ItemsDaoInput ru.itis.inform.store.dao.ItemsDaoFileBasedImpl.input; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: getTsv,getCsv
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 17 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: getTsv,getCsv
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 19 more
+2016-03-10 11:22:15 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@41975e01: startup date [Thu Mar 10 11:22:15 MSK 2016]; root of context hierarchy
+2016-03-10 11:22:15 WARN  AnnotationConfigApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private ru.itis.inform.store.dao.ItemsDao ru.itis.inform.store.services.StoreServiceImpl.itemsDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getOutput': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void ru.itis.inform.store.dao.ItemsDaoFileBasedImpl.setItemsDaoInput(ru.itis.inform.store.dao.ItemsDaoInput); nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: getCsv,getTsv
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at ru.itis.inform.store.services.Program.main(Program.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private ru.itis.inform.store.dao.ItemsDao ru.itis.inform.store.services.StoreServiceImpl.itemsDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getOutput': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void ru.itis.inform.store.dao.ItemsDaoFileBasedImpl.setItemsDaoInput(ru.itis.inform.store.dao.ItemsDaoInput); nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: getCsv,getTsv
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 17 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getOutput': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void ru.itis.inform.store.dao.ItemsDaoFileBasedImpl.setItemsDaoInput(ru.itis.inform.store.dao.ItemsDaoInput); nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: getCsv,getTsv
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void ru.itis.inform.store.dao.ItemsDaoFileBasedImpl.setItemsDaoInput(ru.itis.inform.store.dao.ItemsDaoInput); nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: getCsv,getTsv
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:649)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 30 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: getCsv,getTsv
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:606)
+	... 32 more
+2016-03-10 11:23:22 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:23:22 MSK 2016]; root of context hierarchy
+2016-03-10 11:23:22 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:24:03 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:24:03 MSK 2016]; root of context hierarchy
+2016-03-10 11:24:04 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:27:19 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:27:19 MSK 2016]; root of context hierarchy
+2016-03-10 11:27:19 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:27:37 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:27:37 MSK 2016]; root of context hierarchy
+2016-03-10 11:27:37 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:30:34 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:30:34 MSK 2016]; root of context hierarchy
+2016-03-10 11:30:35 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:30:50 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:30:50 MSK 2016]; root of context hierarchy
+2016-03-10 11:30:51 WARN  AnnotationConfigApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getOutput': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void ru.itis.inform.store.dao.ItemsDaoFileBasedImpl.setItemsDaoInput(ru.itis.inform.store.dao.ItemsDaoInput); nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: Csv,getTsv
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at ru.itis.inform.store.services.Program.main(Program.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void ru.itis.inform.store.dao.ItemsDaoFileBasedImpl.setItemsDaoInput(ru.itis.inform.store.dao.ItemsDaoInput); nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: Csv,getTsv
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:649)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 17 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] is defined: expected single matching bean but found 2: Csv,getTsv
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:606)
+	... 19 more
+2016-03-10 11:31:00 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:31:00 MSK 2016]; root of context hierarchy
+2016-03-10 11:31:00 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:32:04 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:32:04 MSK 2016]; root of context hierarchy
+2016-03-10 11:32:04 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:32:18 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:32:18 MSK 2016]; root of context hierarchy
+2016-03-10 11:32:19 INFO  StoreServiceImpl:22 - itemt was select
+2016-03-10 11:32:27 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:32:27 MSK 2016]; root of context hierarchy
+2016-03-10 11:32:28 INFO  StoreServiceImpl:22 - item was select
+2016-03-10 11:32:35 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:32:35 MSK 2016]; root of context hierarchy
+2016-03-10 11:32:36 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:33:14 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:33:14 MSK 2016]; root of context hierarchy
+2016-03-10 11:33:15 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 11:33:22 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 11:33:22 MSK 2016]; root of context hierarchy
+2016-03-10 11:33:22 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-10 12:10:29 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 10 12:10:29 MSK 2016]; root of context hierarchy
+2016-03-10 12:10:29 INFO  StoreServiceImpl:22 - item0 was select
+2016-03-11 17:22:21 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Fri Mar 11 17:22:21 MSK 2016]; root of context hierarchy
+2016-03-11 17:22:22 INFO  StoreServiceImpl:24 - item0 was select
+2016-03-11 17:24:25 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Fri Mar 11 17:24:25 MSK 2016]; root of context hierarchy
+2016-03-11 17:24:25 INFO  StoreServiceImpl:24 - item was select
+2016-03-11 17:24:52 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Fri Mar 11 17:24:52 MSK 2016]; root of context hierarchy
+2016-03-11 17:24:53 INFO  StoreServiceImpl:24 - item1 was select
+2016-03-15 10:27:28 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Tue Mar 15 10:27:28 MSK 2016]; root of context hierarchy
+2016-03-15 10:27:28 INFO  StoreServiceImpl:24 - item1 was select
+2016-03-15 11:28:57 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Tue Mar 15 11:28:57 MSK 2016]; root of context hierarchy
+2016-03-15 11:28:58 INFO  StoreServiceImpl:24 - item1 was select
+2016-03-17 10:17:37 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 17 10:17:37 MSK 2016]; root of context hierarchy
+2016-03-17 10:17:38 INFO  StoreServiceImpl:24 - item1 was select
+2016-03-17 10:17:48 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dcf3e99: startup date [Thu Mar 17 10:17:48 MSK 2016]; root of context hierarchy
+2016-03-17 10:17:48 INFO  StoreServiceImpl:24 - item was select
+2016-03-17 10:29:38 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:29:38 MSK 2016]; root of context hierarchy
+2016-03-17 10:29:39 INFO  StoreServiceImpl:24 - item0 was select
+2016-03-17 10:34:00 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:34:00 MSK 2016]; root of context hierarchy
+2016-03-17 10:34:01 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 10:36:05 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:36:05 MSK 2016]; root of context hierarchy
+2016-03-17 10:36:05 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 10:41:07 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:41:07 MSK 2016]; root of context hierarchy
+2016-03-17 10:41:07 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 10:41:21 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:41:21 MSK 2016]; root of context hierarchy
+2016-03-17 10:41:22 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 10:42:47 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:42:47 MSK 2016]; root of context hierarchy
+2016-03-17 10:42:48 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 10:43:13 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:43:13 MSK 2016]; root of context hierarchy
+2016-03-17 10:43:14 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 10:44:23 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:44:23 MSK 2016]; root of context hierarchy
+2016-03-17 10:46:16 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:46:16 MSK 2016]; root of context hierarchy
+2016-03-17 10:46:26 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:46:26 MSK 2016]; root of context hierarchy
+2016-03-17 10:46:27 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 10:53:17 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:53:17 MSK 2016]; root of context hierarchy
+2016-03-17 10:53:17 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 10:53:36 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:53:36 MSK 2016]; root of context hierarchy
+2016-03-17 10:53:36 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 10:56:28 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:56:28 MSK 2016]; root of context hierarchy
+2016-03-17 10:56:28 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 10:57:45 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 10:57:45 MSK 2016]; root of context hierarchy
+2016-03-17 10:57:45 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 11:01:53 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dc5e7b4: startup date [Thu Mar 17 11:01:53 MSK 2016]; root of context hierarchy
+2016-03-17 11:01:53 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 11:16:43 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 11:16:43 MSK 2016]; root of context hierarchy
+2016-03-17 11:16:43 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 11:18:38 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 11:18:38 MSK 2016]; root of context hierarchy
+2016-03-17 11:18:39 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 11:25:44 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 11:25:44 MSK 2016]; root of context hierarchy
+2016-03-17 11:26:50 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 11:26:50 MSK 2016]; root of context hierarchy
+2016-03-17 11:29:13 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 11:29:13 MSK 2016]; root of context hierarchy
+2016-03-17 11:30:00 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 11:30:00 MSK 2016]; root of context hierarchy
+2016-03-17 11:30:31 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 11:30:31 MSK 2016]; root of context hierarchy
+2016-03-17 11:33:32 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 11:33:32 MSK 2016]; root of context hierarchy
+2016-03-17 21:52:42 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 21:52:42 MSK 2016]; root of context hierarchy
+2016-03-17 21:52:58 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 21:52:58 MSK 2016]; root of context hierarchy
+2016-03-17 21:52:59 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 21:53:22 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f2b958e: startup date [Thu Mar 17 21:53:22 MSK 2016]; root of context hierarchy
+2016-03-17 21:53:23 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 21:55:54 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 21:55:54 MSK 2016]; root of context hierarchy
+2016-03-17 21:55:55 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 21:58:41 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 21:58:41 MSK 2016]; root of context hierarchy
+2016-03-17 21:58:41 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 22:02:13 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:02:13 MSK 2016]; root of context hierarchy
+2016-03-17 22:02:13 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 22:03:20 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:03:20 MSK 2016]; root of context hierarchy
+2016-03-17 22:03:20 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 22:06:55 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:06:55 MSK 2016]; root of context hierarchy
+2016-03-17 22:06:56 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 22:06:56 INFO  StoreServiceImpl:25 - item0 was select
+2016-03-17 22:10:35 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:10:35 MSK 2016]; root of context hierarchy
+2016-03-17 22:10:36 WARN  AnnotationConfigApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemsDaoFileBasedImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private ru.itis.inform.store.dao.ItemsDaoInput ru.itis.inform.store.dao.ItemsDaoFileBasedImpl.input; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=Csv)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at ru.itis.inform.store.services.Program.main(Program.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private ru.itis.inform.store.dao.ItemsDaoInput ru.itis.inform.store.dao.ItemsDaoFileBasedImpl.input; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=Csv)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 17 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDaoInput] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=Csv)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1301)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1047)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 19 more
+2016-03-17 22:12:25 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:12:25 MSK 2016]; root of context hierarchy
+2016-03-17 22:14:02 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:14:02 MSK 2016]; root of context hierarchy
+2016-03-17 22:14:03 WARN  AnnotationConfigApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private ru.itis.inform.store.dao.ItemsDao ru.itis.inform.store.services.StoreServiceImpl.itemsDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=itemsDaoCsvBasedImpl)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at ru.itis.inform.store.services.Program.main(Program.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private ru.itis.inform.store.dao.ItemsDao ru.itis.inform.store.services.StoreServiceImpl.itemsDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=itemsDaoCsvBasedImpl)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 17 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=itemsDaoCsvBasedImpl)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1301)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1047)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 19 more
+2016-03-17 22:14:30 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:14:30 MSK 2016]; root of context hierarchy
+2016-03-17 22:16:19 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:16:19 MSK 2016]; root of context hierarchy
+2016-03-17 22:17:37 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:17:37 MSK 2016]; root of context hierarchy
+2016-03-17 22:17:37 WARN  AnnotationConfigApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private ru.itis.inform.store.dao.ItemsDao ru.itis.inform.store.services.StoreServiceImpl.itemsDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=itemsDaoCsvBasedImpl)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at ru.itis.inform.store.services.Program.main(Program.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private ru.itis.inform.store.dao.ItemsDao ru.itis.inform.store.services.StoreServiceImpl.itemsDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=itemsDaoCsvBasedImpl)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 17 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [ru.itis.inform.store.dao.ItemsDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=itemsDaoCsvBasedImpl)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1301)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1047)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 19 more
+2016-03-17 22:17:54 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:17:54 MSK 2016]; root of context hierarchy
+2016-03-17 22:19:47 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:19:47 MSK 2016]; root of context hierarchy
+2016-03-17 22:20:45 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:20:45 MSK 2016]; root of context hierarchy
+2016-03-17 22:22:12 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:22:12 MSK 2016]; root of context hierarchy
+2016-03-17 22:22:13 INFO  StoreServiceImpl:29 - Bread was select
+2016-03-17 22:23:06 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:23:06 MSK 2016]; root of context hierarchy
+2016-03-17 22:23:07 INFO  StoreServiceImpl:29 - item0 was select
+2016-03-17 22:23:34 INFO  AnnotationConfigApplicationContext:510 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c4af82c: startup date [Thu Mar 17 22:23:34 MSK 2016]; root of context hierarchy
+2016-03-17 22:23:35 INFO  StoreServiceImpl:29 - item0 was select

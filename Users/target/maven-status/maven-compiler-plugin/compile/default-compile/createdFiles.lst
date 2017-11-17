@@ -1,0 +1,9 @@
+ru/itis/inform/users/dao/UsersDao.class
+ru/itis/inform/users/service/UsersService.class
+ru/itis/inform/users/WebAppInitializer.class
+ru/itis/inform/users/service/UsersServiceImpl.class
+ru/itis/inform/users/dao/models/User.class
+ru/itis/inform/users/dao/AutoDao.class
+ru/itis/inform/users/dao/models/Auto.class
+ru/itis/inform/users/controllers/UsersController.class
+ru/itis/inform/users/WebAppContext.class
